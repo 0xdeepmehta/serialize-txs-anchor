@@ -1,0 +1,15 @@
+[features]
+seeds = false
+
+[programs.devnet]
+serialize_txs_anchor = "BuCjjPVBgDZKybCXtCTu9hMUQMWLNNURZzASDE5Cy7X9"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
